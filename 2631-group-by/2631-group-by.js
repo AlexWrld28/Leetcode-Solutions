@@ -4,8 +4,8 @@
  */
 Array.prototype.groupBy = function(fn) {
     const result = {};
-
-    for (let i = 0; i < this.length; i++) {
+    const len = this.length
+    for (let i = 0; i < len; i++) {
         const item = this[i];
         const key = fn(item)
 

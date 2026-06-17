@@ -6,7 +6,8 @@ Array.prototype.groupBy = function(fn) {
     const result = {};
     const len = this.length
     for (let i = 0; i < len; i++) {
-        const item = this[i];
+        const hold = this[i];
+        const item = hold;
         const key = fn(item)
 
         if(!result[key]) {

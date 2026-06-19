@@ -17,8 +17,8 @@ class ArrayWrapper {
  */
 ArrayWrapper.prototype.valueOf = function() {
     let sum = 0
-    
-    for (let i = 0; i < this.nums.length; i++) {
+    let len = this.nums.length;
+    for (let i = 0; i < len; i++) {
         sum += this.nums[i];
     }
     return sum;
